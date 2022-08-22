@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        sup {
+            color: red;
+        }
+        body{
+            background-color: rgb(243, 235, 182);
+        }
+        fieldset{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        legend{
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="spark18.jpg" alt="Spark 18" title="Spark 18" style="border-radius: 120px;">
+    </header>
+    <p><strong>Career Opportunities</strong> </p>
+    <p>We are hiring </p>
+    <p>Please fill the following details. Our team will contact you.</p>
+    <small>All fields marked <sup>*</sup> are mandatory</small>
+    <form>
+        
+            <label for="post" ><strong> Appplying for</strong><sup>*</sup> :</label>
+            <select name="post" id="post" title="Select the post you want to apply for" style="margin-bottom: 10px; margin-top: 10px;">
+                <optgroup label="Engineering">
+                    <option value="Frontend Engineer">Frontend Engineer</option>
+                    <option value="Backend Engineer">Backend Engineer</option>
+                    <option value="UI/UX Designer">UI/UX Designer</option>
+                    <option value="QA Engineer">QA Engineer</option>
+                </optgroup>
+                <optgroup label="Finance">
+                    <option value="Accounts Manager">Accounts Manager</option>
+                    <option value="Auditor">Auditor</option>
+                </optgroup>
+                <optgroup label="Marketing">
+                    <option value="Sales Manager">Sales Manager</option>
+                    <option value="Digital Marketing ">Digital Marketing Associate</option>
+                </optgroup>
+            </select>
+
+        
+        <fieldset>
+            <legend><strong>Personal Information</strong>  </legend>
+            <span>
+                <label for="fname">First Name <sup>*</sup> :</label>
+                <input type="text" name="fname" id="fname" title="First Name as per AADHAAR" required>
+                <label for="mname">Middle Name:</label>
+                <input type="text" name="mname" id="mname" title="Middle Name as per AADHAAR">
+                <label for="lname">Last Name<sup>*</sup> :</label>
+                <input type="text" name="fname" id="lname" title="Last Name as per AADHAAR" required>
+            </span>
+            <div>
+                <label for="gender" >Gender <sup>*</sup> :</label>
+                <span>
+
+                    <input type="radio" name="gender" id="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other" required>
+                    <label for="other">Other</label>
+                </span>
+            </div>
+            <div>
+                <label for="dob">Date of Birth <sup>*</sup> :</label>
+                <input type="date" name="dob" id="dob" style="margin-top: 5px; margin-bottom: 5px;" title="DOB as per AADHAAR" required>
+            </div>
+            <div>
+                <label for="email">Email id <sup>*</sup> :</label>
+                <input type="email" name="email" id="email" title="Please input your current active email id" required style="margin-top: 5px; margin-bottom: 5px;">
+            </div>
+            <div>
+                <label for="mobile">Mobile No <sup>*</sup> :</label>
+                <input type="text" size="1" value="  +91" readonly>
+                <input type="tel" name="mobile" id="mobile" required pattern="[0-9]{10}" placeholder="  8888888888"
+                    maxlength="10" size="10" title="Enter your 10-digit active mobile number">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Educational Qualifications</strong> </legend>
+            <div>
+                <p><strong>Secondary</strong> </p>
+                <label for="secBoard">Board<sup>*</sup></label>
+                <input type="text" name="secBoard" id="secBoard" title="Enter full name of the board" placeholder="Full name of the board" required >
+                
+                <label for="secSchoolName">School<sup>*</sup></label>
+                <input type="text" name="secSchoolName" id="secSchoolName" title="Schol Name "  placeholder="Full Name of School " required >
+                
+                <label for="secPassingYear">Year of Passing<sup>*</sup> </label>
+                <input type="month" name="secPassingYear" id="secPassingYear" title="Month and Year of Passing" required >
+                
+                
+                <label for="secPercentage">Percentage<sup>*</sup> </label>
+                <input type="text" name="secPercentage" id="secPercentage" max="99.99" pattern="[0-9]{2}.[0-9]{2}" maxlength="5" placeholder="88.88" size="2" title="Enter your Xth percentage" required > <span>%</span>
+
+
+            </div>
+            <div>
+                <p><strong> Senior Secondary</strong> </p>
+                <label for="seniorSecBoard">Board<sup>*</sup></label>
+                <input type="text" name="seniorSecBoard" id="seniorSecBoard" title="Enter full name of the board" placeholder="Full name of the board" required >
+
+                <label for="seniorSecSchoolName">School<sup>*</sup></label>
+                <input type="text" name="seniorSecSchoolName" id="seniorSecSchoolName" title="Schol Name " placeholder="Full Name of School " required >
+
+                <label for="seniorSecPassingYear">Year of Passing <sup>*</sup></label>
+                <input type="month" name="seniorSecPassingYear" id="seniorSecPassingYear" title="Month and Year of Passing" required >
+
+                <label for="seniorSecPercentage">Percentage <sup>*</sup></label>
+                <input type="text" name="seniorSecPercentage" id="seniorSecPercentage" max="100.00" pattern="[0-9]{2}.[0-9]{2}" maxlength="5" placeholder="88.88" size="2" title="Enter your XIIth / Equivalent percentage" required ><span>%</span>
+
+            </div>
+            <div>
+                <p><strong> Graduation</strong> </p>
+                <label for="univ">University<sup>*</sup></label>
+                <input type="text" name="univ" id="univ" title="Enter full name of the University" placeholder="Full name of the University" required  >
+
+                <label for="institute">Institute<sup>*</sup></label>
+                <input type="text" name="institute" id="institute" title="Institute Name " placeholder="Enter full name of the Institute" size="25" required >
+
+                <label for="gradCourse">Course<sup>*</sup></label>
+                <input type="text" name="gradCourse" id="gradCourse" title="Full name of the course" placeholder="Full name of the course" required >
+
+                <label for="gradPassingYear">Year of Passing <sup>*</sup></label>
+                <input type="month" name="gradPassingYear" id="gradPassingYear" title="Month and Year of Passing" required >
+
+                <label for="gradPercentage">Percentage <sup>*</sup></label>
+                <input type="text" name="gradPercentage" id="gradPercentage" max="100.00" pattern="[0-9]{2}.[0-9]{2}" maxlength="5" placeholder="88.88" size="2" title="Enter your Graduation percentage" required ><span>%</span>
+
+            </div>
+            <span>
+                <p><strong> Post Graduation</strong> </p>
+                <label for="postuniv">University</label>
+                <input type="text" name="postuniv" id="postuniv" title="Enter full name of the University" placeholder="Full name of the University"  >
+
+                <label for="postinstitute">Institute</label>
+                <input type="text" name="postinstitute" id="postinstitute" title="Institute Name " placeholder="Enter full name of the Institute" size="25">
+
+                <label for="postgradCourse">Course</label>
+                <input type="text" name="postgradCourse" id="postgradCourse" title="Full name of the course" placeholder="Full name of the course">
+
+                <label for="postgradPassingYear">Year of Passing </label>
+                <input type="month" name="postgradPassingYear" id="postgradPassingYear" title="Month and Year of Passing">
+
+                <label for="postgradPercentage"> Percentage </label>
+                <input type="text" name="postgradPercentage" id="postgradPercentage" max="100.00" pattern="[0-9]{3}.[0-9]{2}" maxlength="6" placeholder="88.88" size="2" title="Enter your Post Graduation percentage"><span>%</span>
+
+            </span>
+            
+        </fieldset>
+        <fieldset >
+            <legend><strong> Work </strong></legend>
+            <!-- <span> -->
+                <label for="yearsExp"><strong>Experience<sup>*</sup> : </strong> </label>
+                <input type="text" name="yearsExp" id="yearsExp" size="1" pattern="[0-9]{2}" maxlength="2" placeholder="  00 " required title="Years of total job experience. (Do not include internships/industrial trainings) Write 00 if 0 year" >
+                <span>Years</span>
+            <!-- </span> -->
+            <!-- <span> -->
+                <input type="text" name="monthsExp" id="monthsExp" size="1" pattern="[0-9]{2}" min="00" max="11" maxlength="2" placeholder="  00 " title="Months of total job experience. (Do not include internships/industrial trainings) Write 00 if 0 month" required >
+                <span>Months</span>
+            <!-- </span> -->
+            <div>
+                <label for="company">Last Company</label>
+                <input type="text" name="company" id="company">
+                
+                <label for="desig">Designation </label>
+                <input type="text" name="desig" id="desig">
+                
+                <label for="sal">Annual CTC </label>
+                <input type="number" name="sal" id="sal" min="0" max="50" title="Annual CTC in lakhs">
+
+                <div>
+                    <label for="expsal">Expected Salary </label>
+                    <input type="range" name="expsal" id="expsal" title="Expected annual salary in lakhs" min="1" max="50" step="1" value="0" >  <!--oninput="this.nextElementSibling.value = this.value"--><!-- <output>0</output><span>Lakhs</span> -->
+                </div>
+            </div>
+            
+
+        </fieldset>
+
+
+        <div style=" margin-top: 4px; ">
+            <input type="submit" value="Submit Now" style="background-color: rgb(160, 235, 160);">
+            <input type="reset" value="Reset" style="background-color: rgb(232, 94, 94);">
+        </div>
+
+    </form>
+
+    <hr>
+    <footer style="border: 2px solid rgba(81, 211, 12, 0.309);">
+        <div>
+            <p><strong>Contact Us </strong>
+            <pre>Spark Eighteen
+Building No 82, Lower Ground Floor, Okhla Phase III, Delhi 110020
+Phone: 081305 86660
+<a href="mailto:coffee@sparkeighteen.com" target="_blank">Send us a mail</a>
+<a href="https://www.sparkeighteen.com/" target="_blank">Visit our website</a></pre>
+            <em> &copy;Copyright 2022 Spark Eighteeen Lifestyle Pvt. Ltd. All Rights Reserved</em>
+        </div>
+    </footer>
+</body>
+
+</html>
