@@ -8,274 +8,367 @@
     <title>Project</title>
     <link rel="icon" href="spark18.ico">
 
-    <style>
-        a:link {
-            text-decoration: none;
-        }
-        a:hover {
-            color: red;
-            background-color: transparent;
-            text-decoration: underline;
-        }
-        
-
-        sup {
-            color: red;
-        }
-
-        body {
-            background-color: rgb(243, 235, 182);
-        }
-
-        fieldset {
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        legend {
-            color: blueviolet;
-        }
-    </style>
+    <link rel="stylesheet" href="project.css">
 </head>
 
 <body>
-    <header>
-        <img src="spark18.jpg" alt="Spark 18" title="Spark 18" style="border-radius: 120px;">
-    </header>
-    <p><strong>Career Opportunities</strong> </p>
-    <p>We are hiring <a href="vacancy.html" target="_blank"> See Current Vacancies</a></p>
-    <!-- <p>   <a href="#work" >  Go to work</a></p> -->
+    <div id="header_div">
+        <header>
+            <img src="spark18.jpg" alt="Spark 18" id="header_sp18_image" title="Spark 18">
+        </header>
+    </div>
+    <div id="intro_text_div">
+        <div id="career_div">
+            <p><strong>Career Opportunities</strong> </p>
+        </div>
+        <div id="hiring_div">
+            <p>We are hiring <a href="vacancy.html" target="_blank"> See Current Vacancies</a></p>
+            <!--<p>   <a href="#work" >  Go to work section</a></p> -->
+        </div>
+        <div id="please_fill_div">
+            <p>Please fill the following details. Our team will contact you.</p>
+        </div>
+        <div id="mandatory_div">
+            <small>All fields marked <sup>*</sup> are mandatory</small>
+        </div>
 
-    <p>Please fill the following details. Our team will contact you.</p>
-    <small>All fields marked <sup>*</sup> are mandatory</small>
-    <form>
-
-        <label for="post"><strong> Appplying for</strong><sup>*</sup> :</label>
-        <select name="post" id="post" title="Select the post you want to apply for"
-            style="margin-bottom: 10px; margin-top: 10px;">
-            <option selected  hidden>Select Post</option>
-            <optgroup label="Engineering">
-                <option>Frontend Engineer</option>
-                <option>Backend Engineer</option>
-                <option>UI/UX Designer</option>
-                <option>QA Engineer</option>
-            </optgroup>
-            <optgroup label="Finance">
-                <option>Accounts Manager</option>
-                <option>Auditor</option>
-            </optgroup>
-            <optgroup label="Marketing">
-                <option>Sales Manager</option>
-                <option>Digital Marketing Associate</option>
-            </optgroup>
-        </select>
-
-
-        <fieldset id="personalinfo">
-            <legend><strong>Personal Information</strong> </legend>
-            <span>
-                <label for="fname">First Name <sup>*</sup> :</label>
-                <input type="text" name="fname" id="fname" title="First Name as per AADHAAR" required>
-                <label for="mname">Middle Name:</label>
-                <input type="text" name="mname" id="mname" title="Middle Name as per AADHAAR">
-                <label for="lname">Last Name<sup>*</sup> :</label>
-                <input type="text" name="fname" id="lname" title="Last Name as per AADHAAR" required>
-            </span>
-            <div>
-                <label for="gender">Gender <sup>*</sup> :</label>
-                <span>
-
-                    <input type="radio" name="gender" id="male" required>
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender" id="female" required>
-                    <label for="female">Female</label>
-                    <input type="radio" name="gender" id="other" required>
-                    <label for="other">Other</label>
-                </span>
+    </div>
+    <div id="form_div">
+        <form>
+            <div id="appliying_for_div">
+                <label for="post"><strong> Appplying for</strong><sup>*</sup> :</label>
+                <select name="post" id="post" title="Select the post you want to apply for">
+                    <option selected hidden>Select Post</option>
+                    <optgroup label="Engineering">
+                        <option>Frontend Engineer</option>
+                        <option>Backend Engineer</option>
+                        <option>UI/UX Designer</option>
+                        <option>QA Engineer</option>
+                    </optgroup>
+                    <optgroup label="Finance">
+                        <option>Accounts Manager</option>
+                        <option>Auditor</option>
+                    </optgroup>
+                    <optgroup label="Marketing">
+                        <option>Sales Manager</option>
+                        <option>Digital Marketing Associate</option>
+                    </optgroup>
+                </select>
             </div>
-            <div>
-                <label for="dob">Date of Birth <sup>*</sup> :</label>
-                <input type="date" name="dob" id="dob" style="margin-top: 5px; margin-bottom: 5px;"
-                    title="DOB as per AADHAAR" required>
+            <div id="personal_info_div">
+                <fieldset>
+                    <legend><strong>Personal Information</strong> </legend>
+                    <div id="name_div">
+                        <div id="first_name_div" >
+                            <label for="fname">First Name <sup>*</sup> </label>
+                            <input type="text" name="fname" id="fname" title="First Name as per AADHAAR" required >
+                        </div>
+                        <div id="middle_name_div"  >
+                            <label for="mname" >Middle Name </label>
+                            <input type="text" name="mname" id="mname" title="Middle Name as per AADHAAR" >
+                        </div>
+                        <div id="last_name_div">
+                            <label for="lname">Last Name<sup>*</sup> </label>
+                            <input type="text" name="fname" id="lname" title="Last Name as per AADHAAR" required >
+                        </div>
+                    </div>
+                    <div id="gender_div">
+                        <label for="gender">Gender <sup>*</sup> </label>
+                        <input type="radio" name="gender" id="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" required>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other" required>
+                        <label for="other">Other</label>
+                    </div>
+                    <div id="dob_div">
+                        <label for="dob">Date of Birth <sup>*</sup> </label>
+                        <input type="date" name="dob" id="dob" title="DOB as per AADHAAR" required>
+                    </div>
+                    <div id="email_div">
+                        <label for="email">Email id <sup>*</sup> </label>
+                        <input type="email" name="email" id="email" title="Please input your current active email id"
+                            required>
+                    </div>
+                    <div id="mobile_div">
+                        <label for="mobile">Mobile No <sup>*</sup> </label>
+                        <input type="text" size="1" value="  +91" readonly>
+                        <input type="tel" name="mobile" id="mobile" required pattern="[0-9]{10}"
+                            placeholder="  8888888888" maxlength="10" size="10"
+                            title="Enter your 10-digit active mobile number">
+                    </div>
+                </fieldset>
             </div>
-            <div>
-                <label for="email">Email id <sup>*</sup> :</label>
-                <input type="email" name="email" id="email" title="Please input your current active email id" required
-                    style="margin-top: 5px; margin-bottom: 5px;">
+
+            <div id="education_div">
+                <fieldset>
+                    <legend><strong>Educational Qualifications</strong> </legend>
+                    <div id="secondary_div">
+
+                        <div id="secondary_heading_div">
+                            <p><strong>Secondary</strong> </p>
+                        </div>
+                        <div id="secondary_details_div">
+                            <div id="secondary_board_div">
+                                <label for="secBoard">Board<sup>*</sup></label>
+                                <input type="text" name="secBoard" id="secBoard" title="Enter full name of the board"
+                                    placeholder="Full name of the board" required>
+                            </div>
+                            <div id="secondary_school_div">
+                                <label for="secSchoolName">School<sup>*</sup></label>
+                                <input type="text" name="secSchoolName" id="secSchoolName" title="Schol Name "
+                                    placeholder="Full Name of School " required>
+                            </div>
+                            <div id="secondary_year_of_passing_div">
+                                <label for="secPassingYear">Year of Passing<sup>*</sup> </label>
+                                <input type="month" name="secPassingYear" id="secPassingYear"
+                                    title="Month and Year of Passing" required>
+
+                            </div>
+                            <div id="secondary_percentage_div">
+                                <label for="secPercentage">Percentage<sup>*</sup> </label>
+                                <input type="text" name="secPercentage" id="secPercentage" pattern="[0-9]{2}.[0-9]{2}"
+                                    maxlength="5" placeholder="00.00"  title="Enter your Xth percentage">
+                                <span> %</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="senior_sec_div">
+                        <div id="senior_sec_heading_div">
+                            <p><strong> Senior Secondary</strong> </p>
+                        </div>
+                        <div id="senior_sec_details_div">
+                            <div id="senior_sec_board_div">
+                                <label for="seniorSecBoard">Board<sup>*</sup></label>
+                                <input type="text" name="seniorSecBoard" id="seniorSecBoard"
+                                    title="Enter full name of the board" placeholder="Full name of the board" required>
+                            </div>
+                            <div id="senior_sec_school_div">
+                                <label for="seniorSecSchoolName">School<sup>*</sup></label>
+                                <input type="text" name="seniorSecSchoolName" id="seniorSecSchoolName"
+                                    title="Schol Name " placeholder="Full Name of School " required>
+                            </div>
+                            <div id="senior_sec_year_of_passing_div">
+                                <label for="seniorSecPassingYear">Year of Passing <sup>*</sup></label>
+                                <input type="month" name="seniorSecPassingYear" id="seniorSecPassingYear"
+                                    title="Month and Year of Passing" required>
+                            </div>
+                            <div id="senior_sec_percentage_div">
+                                <label for="seniorSecPercentage">Percentage <sup>*</sup></label>
+                                <input type="text" name="seniorSecPercentage" id="seniorSecPercentage"
+                                    pattern="[0-9]{2}.[0-9]{2}" maxlength="5" placeholder="00.00"
+                                    title="Enter your XIIth / Equivalent percentage" required><span> % </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="grad_div">
+                        <div id="grad_heading_div">
+                            <p><strong> Graduation</strong> </p>
+                        </div>
+                        <div id="grad_details_div">
+                            <div id="grad_university_div">
+                                <label for="univ">University<sup>*</sup></label>
+                                <input type="text" name="univ" id="univ" title="Enter full name of the University"
+                                    placeholder="Full name of the University" required>
+
+                            </div>
+                            <div id="grad_institute_div">
+                                <label for="institute">Institute<sup>*</sup></label>
+                                <input type="text" name="institute" id="grad_institute" title="Institute Name "
+                                    placeholder="Enter full name of the Institute" size="25" required>
+                            </div>
+                            <div id="grad_course_div">
+                                <label for="gradCourse">Course<sup>*</sup></label>
+                                <input type="text" name="gradCourse" id="grad_course" title="Full name of the course"
+                                    placeholder="Full name of the course" required>
+
+                            </div>
+                            <div id="grad_year_of_passing_div">
+                                <label for="gradPassingYear" id="gradPassingYear">Year of Passing <sup>*</sup></label>
+                                <input type="month" name="gradPassingYear" id="gradPassingYear"
+                                    title="Month and Year of Passing" required>
+                            </div>
+                            <div id="grad_percentage_div">
+                                <label for="gradPercentage">Percentage <sup>*</sup></label>
+                                <input type="text" name="gradPercentage" id="gradPercentage" pattern="[0-9]{2}.[0-9]{2}"
+                                    maxlength="5" placeholder="00.00" 
+                                    title="Enter your Graduation percentage, Convert CGPA to equivalent % "
+                                    required><span> % </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="post_grad_div">
+                        <div id="post_grad_heading_div">
+                            <p><strong> Post Graduation</strong> </p>
+                        </div>
+                        <div id="post_grad_details_div">
+                            <div id="post_grad_university_div">
+                                <label for="postuniv" id="postuniv">University <sup class="invisible_star">*</sup></label>
+                                <input type="text" name="postuniv" id="postuniv"
+                                    title="Enter full name of the University" placeholder="Full name of the University">
+                            </div>
+                            <div id="post_grad_institute_div">
+                                <label for="postinstitute">Institute<sup class="invisible_star">*</sup></label>
+                                <input type="text" name="postinstitute" id="postinstitute" title="Institute Name "
+                                    placeholder="Enter full name of the Institute" size="25">
+                            </div>
+                            <div id="post_grad_course_div">
+                                <label for="postgradCourse">Course<sup class="invisible_star">*</sup></label>
+                                <input type="text" name="postgradCourse" id="postgradCourse"
+                                    title="Full name of the course" placeholder="Full name of the course">
+                            </div>
+                            <div id="post_grad_year_of_passing_div">
+                                <label for="postgradPassingYear">Year of Passing <sup class="invisible_star">*</sup></label>
+                                <input type="month" name="postgradPassingYear" id="postgradPassingYear"
+                                    title="Month and Year of Passing">
+                            </div>
+                            <div id="post_grad_percentage_div">
+                                <label for="postgradPercentage"> Percentage <sup class="invisible_star">*</sup></label>
+                                <input type="text" name="postgradPercentage" id="postgradPercentage"
+                                    pattern="[0-9]{3}.[0-9]{2}" maxlength="5" placeholder="00.00" 
+                                    title="Enter your Post Graduation percentage, Convert CGPA to equivalent % "><span> % </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
             </div>
-            <div>
-                <label for="mobile">Mobile No <sup>*</sup> :</label>
-                <input type="text" size="1" value="  +91" readonly>
-                <input type="tel" name="mobile" id="mobile" required pattern="[0-9]{10}" placeholder="  8888888888"
-                    maxlength="10" size="10" title="Enter your 10-digit active mobile number">
+
+            <div id="work_div">
+                <fieldset>
+                    <legend><strong> Work </strong></legend>
+                    <div id="experience_div">
+                        <label for="yearsExp"><strong>Experience<sup>*</sup> </strong> </label>
+                        <input type="text" name="yearsExp" id="yearsExp" size="1" pattern="[0-9]{2}" maxlength="2"
+                            placeholder="  00 " required
+                            title="Years of total job experience. (Do not include internships/industrial trainings) Write 00 if 0 year">
+                        <span>Years</span>
+
+                        <input type="text" name="monthsExp" id="monthsExp" size="1" pattern="[0-9]{2}" min="00" max="11"
+                            maxlength="2" placeholder="  00 "
+                            title="Months of total job experience. (Do not include internships/industrial trainings) Write 00 if 0 month"
+                            required>
+                        <span>Months</span>
+
+                    </div>
+                    <div id="last_company_div">
+                        <div id="last_company_name_div">
+                            <label for="company">Last Company Name</label>
+                            <input type="text" name="company" id="company">
+                        </div>
+                        <div id="designation_div">
+                            <label for="desig">Designation </label>
+                            <input type="text" name="desig" id="desig">
+
+                        </div>
+                        <div id="annual_ctc_div">
+                            <label for=" sal">Annual CTC </label>
+                            <input type="number" name="sal" id="sal" min="0" max="50" title="Annual CTC in lakhs">
+                            <small>Lakhs</small>
+                        </div>
+                    </div>
+                    <div id="expected_salary_div">
+                        <label for="expsal">Expected Salary </label>
+                        <input type="range" name="expsal" id="expsal" title="Expected annual salary in lakhs" min="0"
+                            max="50" step="1" value="0" >
+                            <!-- oninput="this.nextElementSibling.value = this.value"<output>0</output>
+                            <span>Lakhs</span> -->
+                    </div>
+                </fieldset>
             </div>
-        </fieldset>
-        <fieldset>
-            <legend id="education"><strong>Educational Qualifications</strong> </legend>
-            <div>
-                <p><strong>Secondary</strong> </p>
-                <label for="secBoard">Board<sup>*</sup></label>
-                <input type="text" name="secBoard" id="secBoard" title="Enter full name of the board"
-                    placeholder="Full name of the board" required>
 
-                <label for="secSchoolName">School<sup>*</sup></label>
-                <input type="text" name="secSchoolName" id="secSchoolName" title="Schol Name "
-                    placeholder="Full Name of School " required>
+            <div id="upload_div">
+                <fieldset>
+                    <legend><strong>Upload </strong></legend>
+                    <div id="upload_section_div">
+                        <!-- <div id="upload_photograph_div">
+                            <label for="photo">Upload your photograph <sup>*</sup> </label>
+                            <input type="file" name="photo" id="photo" accept="image/*" required
+                                title="Upload your recent photograph (.jpg/.jpeg/.png )">
 
-                <label for="secPassingYear">Year of Passing<sup>*</sup> </label>
-                <input type="month" name="secPassingYear" id="secPassingYear" title="Month and Year of Passing"
-                    required>
+                        </div> -->
+                        <!-- <div id="upload_resume_div">
+                            <label for="resume">Upload Resume <sup>*</sup> </label>
+                            <input type="file" name="resume" id="resume" required
+                                title="Upload your recent resume (.pdf/.doc)"
+                                accept=".pdf,.doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document ">
 
+                        </div> -->
+                        <div id="upload_photograph_div" class="file_upload">
+                            <label for="upload_photo">
+                              <img src="profile.jpg" width="75" height="75" title="Upload your recent photograph (.jpg/.jpeg/.png )">
+                            </label>
+                            <input type="file" id="upload_photo" name="upload_photo"  accept="image/*" required>
+                        </div>
+                        <div id="upload_resume_div" class="file_upload">
+                            <label for="upload_resume">
+                                <img src="resume.jpg" id="resume_image" width="75" height="75" title="Upload your recent resume (.doc)">
+                            </label>
+                            <input type="file" name="upload_resume" id="upload_resume" required
+                                accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document ">
 
-                <label for="secPercentage">Percentage<sup>*</sup> </label>
-                <input type="text" name="secPercentage" id="secPercentage" pattern="[0-9]{2}.[0-9]{2}" maxlength="5"
-                    placeholder="00.00" size="2" title="Enter your Xth percentage"> <span>%</span>
+                        </div>
+                        <div id="upload_certificates_div" class="file_upload">
+                            <label for="upload_certificates">
+                                <img src="certificates.jpg" id="certificates_image" width="75" height="75" title="Upload all educational and experience certificates (.pdf)">
+                            </label>
+                            <input type="file" name="upload_certificates" id="upload_certificates" multiple required
+                                accept=".pdf">
 
+                        </div>
+                        <div id="upload_self_intro_video_div" class="file_upload">
+                            <label for="upload_video">
+                                <img src="self_intro_video.jpg" id="self_intro_video_image" width="75" height="75"  title="Upload your self introduction video (.mp4)">
+                            </label>
+                            <input type="file" name="upload_video" id="upload_video" required
+                                accept="video/* ">
 
+                        </div>
+                        <div id="upload_explanation_audio_div" class="file_upload">
+                            <label for="upload_audio">
+                                <img src="explanation_audio.jpg" id="explanation_audio_image" width="75" height="75"  title="Upload an audio explaining any topic of your choice (.mp3)">
+                            </label>
+                            <input type="file" name="upload_audio" id="upload_audio" required
+                                accept="audio/* ">
+
+                        </div>
+                    </div>
+                    <div id="skills_div">
+                        <textarea name="skills" id="skills" cols="45" rows="5"
+                            placeholder="Tell us about yourself (including your sills)"></textarea>
+                    </div>
+                </fieldset>
             </div>
-            <div>
-                <p><strong> Senior Secondary</strong> </p>
-                <label for="seniorSecBoard">Board<sup>*</sup></label>
-                <input type="text" name="seniorSecBoard" id="seniorSecBoard" title="Enter full name of the board"
-                    placeholder="Full name of the board" required>
 
-                <label for="seniorSecSchoolName">School<sup>*</sup></label>
-                <input type="text" name="seniorSecSchoolName" id="seniorSecSchoolName" title="Schol Name "
-                    placeholder="Full Name of School " required>
-
-                <label for="seniorSecPassingYear">Year of Passing <sup>*</sup></label>
-                <input type="month" name="seniorSecPassingYear" id="seniorSecPassingYear"
-                    title="Month and Year of Passing" required>
-
-                <label for="seniorSecPercentage">Percentage <sup>*</sup></label>
-                <input type="text" name="seniorSecPercentage" id="seniorSecPercentage" pattern="[0-9]{2}.[0-9]{2}"
-                    maxlength="5" placeholder="00.00" size="2" title="Enter your XIIth / Equivalent percentage"
-                    required><span>%</span>
-
-            </div>
-            <div>
-                <p><strong> Graduation</strong> </p>
-                <label for="univ">University<sup>*</sup></label>
-                <input type="text" name="univ" id="univ" title="Enter full name of the University"
-                    placeholder="Full name of the University" required>
-
-                <label for="institute">Institute<sup>*</sup></label>
-                <input type="text" name="institute" id="institute" title="Institute Name "
-                    placeholder="Enter full name of the Institute" size="25" required>
-
-                <label for="gradCourse">Course<sup>*</sup></label>
-                <input type="text" name="gradCourse" id="gradCourse" title="Full name of the course"
-                    placeholder="Full name of the course" required>
-
-                <label for="gradPassingYear">Year of Passing <sup>*</sup></label>
-                <input type="month" name="gradPassingYear" id="gradPassingYear" title="Month and Year of Passing"
-                    required>
-
-                <label for="gradPercentage">Percentage <sup>*</sup></label>
-                <input type="text" name="gradPercentage" id="gradPercentage" pattern="[0-9]{2}.[0-9]{2}" maxlength="5"
-                    placeholder="00.00" size="2" title="Enter your Graduation percentage, Convert CGPA to equivalent % "
-                    required><span>%</span>
-
-            </div>
-            <span>
-                <p><strong> Post Graduation</strong> </p>
-                <label for="postuniv">University</label>
-                <input type="text" name="postuniv" id="postuniv" title="Enter full name of the University"
-                    placeholder="Full name of the University">
-
-                <label for="postinstitute">Institute</label>
-                <input type="text" name="postinstitute" id="postinstitute" title="Institute Name "
-                    placeholder="Enter full name of the Institute" size="25">
-
-                <label for="postgradCourse">Course</label>
-                <input type="text" name="postgradCourse" id="postgradCourse" title="Full name of the course"
-                    placeholder="Full name of the course">
-
-                <label for="postgradPassingYear">Year of Passing </label>
-                <input type="month" name="postgradPassingYear" id="postgradPassingYear"
-                    title="Month and Year of Passing">
-
-                <label for="postgradPercentage"> Percentage </label>
-                <input type="text" name="postgradPercentage" id="postgradPercentage" pattern="[0-9]{3}.[0-9]{2}"
-                    maxlength="6" placeholder="00.00" size="2"
-                    title="Enter your Post Graduation percentage, Convert CGPA to equivalent % "><span>%</span>
-
-            </span>
-
-        </fieldset>
-        <fieldset id="work">
-            <legend><strong> Work </strong></legend>
-            <!-- <span> -->
-            <label for="yearsExp"><strong>Experience<sup>*</sup> : </strong> </label>
-            <input type="text" name="yearsExp" id="yearsExp" size="1" pattern="[0-9]{2}" maxlength="2"
-                placeholder="  00 " required
-                title="Years of total job experience. (Do not include internships/industrial trainings) Write 00 if 0 year">
-            <span>Years</span>
-            <!-- </span> -->
-            <!-- <span> -->
-            <input type="text" name="monthsExp" id="monthsExp" size="1" pattern="[0-9]{2}" min="00" max="11"
-                maxlength="2" placeholder="  00 "
-                title="Months of total job experience. (Do not include internships/industrial trainings) Write 00 if 0 month"
-                required>
-            <span>Months</span>
-            <!-- </span> -->
-            <div>
-                <label for="company">Last Company</label>
-                <input type="text" name="company" id="company" style="margin-top: 5px; margin-bottom: 5px; ">
-
-                <label for="desig">Designation </label>
-                <input type="text" name="desig" id="desig" style="margin-top: 5px; margin-bottom: 5px;>
-                
-                <label for=" sal">Annual CTC </label>
-                <input type="number" name="sal" id="sal" min="0" max="50" title="Annual CTC in lakhs">
-
-                <div>
-                    <label for="expsal">Expected Salary </label>
-                    <input type="range" name="expsal" id="expsal" title="Expected annual salary in lakhs" min="1"
-                        max="50" step="1" value="0" style="margin-top: 5px; margin-bottom: 5px;">
-                    <!--oninput="this.nextElementSibling.value = this.value"-->
-                    <!-- <output>0</output><span>Lakhs</span> -->
+            <div id="submit_reset_div">
+                <div id="submit_div">
+                    <input type="submit" value="Submit Now" id="submit_button">
+                </div>
+                <div id="reset_div">
+                    <input type="reset" id="reset_button" value="Reset">
                 </div>
             </div>
 
-
-        </fieldset>
-        <fieldset id="upload">
-            <legend><strong>Upload </strong></legend>
-            <label for="photo">Upload your photograph <sup>*</sup> : </label>
-            <input type="file" name="photo" id="photo" accept="image/*" style="margin-top: 5px; margin-bottom: 5px;"
-                required title="Upload your recent photograph (.jpg/.jpeg/.png )">
-
-            <label for="resume">Upload Resume <sup>*</sup> : </label>
-            <input type="file" name="resume" id="resume" style="margin-top: 5px; margin-bottom: 5px;" required
-                title="Upload your recent resume (.pdf/.doc)"
-                accept=".pdf,.doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document ">
-
-            <div>
-                <textarea name="skills" id="skills" cols="45" rows="5"
-                    placeholder="Tell us about yourself (including your sills)"></textarea>
-            </div>
-        </fieldset>
-        <!-- <input type="search" name="search" id="search"> -->
-
-        <div style=" margin-top: 4px; ">
-            <input type="submit" value="Submit Now" style="background-color: rgb(160, 235, 160);">
-            <input type="reset" value="Reset" style="background-color: rgb(232, 94, 94);">
-        </div>
-    </form>
+        </form>
+    </div>
 
     <hr>
-    <footer style="border: 2px solid rgba(81, 211, 12, 0.309);">
-        <div>
-            <p style="text-decoration: underline ;"><strong>Contact Us </strong>
-            <pre>Spark Eighteen
+    <div id="footer_div">
+        <footer>
+            <div>
+                <p id="contact_us"><strong>Contact Us </strong>
+                <pre>Spark Eighteen
 Building No 82, Lower Ground Floor, Okhla Phase III, Delhi 110020
 Phone: 081305 86660
 <a href="mailto:coffee@sparkeighteen.com" target="_blank">Send us a mail</a>
 <a href="https://www.sparkeighteen.com/" target="_blank">Visit our website</a></pre>
-            <em> &copy;Copyright 2022 Spark Eighteeen Lifestyle Pvt. Ltd. All Rights Reserved</em>
-        </div>
-    </footer>
+                <em> &copy;Copyright 2022 Spark Eighteeen Lifestyle Pvt. Ltd. All Rights Reserved</em>
+            </div>
+        </footer>
+    </div>
+
 </body>
 
 </html>

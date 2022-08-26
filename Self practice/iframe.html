@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        #mainDIV,#video {
+            display: flex;
+
+        }
+
+        #noboderiframe {
+            border: none;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        #linkforaniframe:link {
+            color: red;
+            text-decoration: none;
+        }
+
+        #linkforaniframe:visited {
+            color: green;
+            text-decoration: none;
+        }
+
+        #linkforaniframe:hover {
+            color: purple;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainDIV">
+        <div id="=standardiframe">
+            <h3>Standard IFrame </h3>
+            <iframe src="https://www.sparkeighteen.com/" height="500" width="446" title="Standard IFrame"></iframe>
+        </div>
+        <div id="noborderiframe">
+            <h3> No Border IFrame</h3>
+            <iframe src="https://www.sparkeighteen.com/" height="500" width="446" title="No Border IFrame"></iframe>
+        </div>
+        <div>
+            <h3> <a href="https://www.sparkeighteen.com/" target="linkiframe" id="linkforaniframe">Link for an
+                    Iframe</a></h3>
+            <iframe name="linkiframe" height="500" width="446" title="Link for an IFrame"></iframe>
+        </div>
+
+    </div>
+    <div id="video">
+       <div id="videocontrols">
+            <h3>Video controls</h3>
+            <video height="240" width="320" controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+       </div>
+        <div id="autoplay">
+            <h3>Autoplay</h3>
+            <video height="240" width="320" autoplay>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div> 
+        <div id="autoplaymuted">
+            <h3>Autoplay Muted</h3>
+            <video height="240" width="320" autoplay muted>
+            <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="autoplaymuted">
+            <h3>Autoplay Muted</h3>
+            <video height="240" width="320" autoplay muted>
+            <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+       <div>
+           <h3>Autoplay Muted</h3>
+           <video src="video.mp4" type="video/mp4" height="=240" width="320" autoplay muted></video>
+       </div>
+    </div> 
+
+</body>
+
+</html>

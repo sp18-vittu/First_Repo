@@ -1,0 +1,152 @@
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+sup {
+    color: red;
+}
+
+body {
+    background-color: rgb(243, 235, 182);
+}
+
+fieldset {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+legend {
+    color: blueviolet;
+}
+
+#submitresetdiv {
+    margin-top: 4px;
+}
+
+#name_div,
+#secondary_details_div,
+#senior_sec_details_div,
+#grad_details_div,
+#post_grad_details_div,
+#last_company_div,
+#upload_section_div,
+#submit_reset_div {
+    display: flex;
+}
+
+#header_sp18_image {
+    border-radius: 120px;
+}
+
+#applying_for_div {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+#dob_div,
+#email_div,
+#last_company_div,
+#expected_salary_div,
+#upload_section_div {
+    margin: 5px 0px;
+}
+
+#submit_button {
+    background-color: rgb(160, 235, 160);
+}
+
+#reset_button {
+    background-color: rgb(232, 94, 94);
+}
+
+#footer_div {
+    border: 2px solid rgba(81, 211, 12, 0.309);
+}
+
+#contact_us {
+    text-decoration: underline;
+}
+
+.file_upload>input {
+    display: none;
+}
+
+#first_name_div,
+#middle_name_div,
+#last_name_div {
+    width: 33%;
+}
+
+#middle_name_div {
+    margin-top: 5px;
+}
+
+#secondary_board_div,
+#secondary_school_div,
+#secondary_year_of_passing_div,
+#secondary_percentage_div {
+    width: 25%;
+}
+
+#senior_sec_board_div,
+#senior_sec_school_div,
+#senior_sec_year_of_passing_div,
+#senior_sec_percentage_div {
+    width: 25%;
+}
+
+#grad_university_div,
+#grad_institute_div,
+#grad_course_div,
+#grad_year_of_passing_div,
+#grad_percentage_div {
+    margin: 0px 18px 0px 0px;
+}
+
+#post_grad_university_div,
+#post_grad_institute_div,
+#post_grad_course_div,
+#post_grad_year_of_passing_div,
+#post_grad_percentage_div {
+    margin: 0px 18px 0px 0px;
+}
+
+.invisible_star {
+    visibility: hidden;
+
+}
+
+#last_company_name_div,
+#designation_div,
+#annual_ctc_div {
+    width: 33%;
+}
+
+#upload_photograph_div,
+#upload_resume_div,
+#upload_certificates_div,
+#upload_self_intro_video_div,
+#upload_explanation_audio_div {
+    /* margin: 0px 5px; */
+    width: 10%;
+}
+
+#self_intro_video_image {
+    border-radius: 14px;
+}
+#submit_div, #reset_div{
+    width: 8%;
+}
+#certificates_image{
+    border-radius: 15px;
+}
+#gradPercentage,#secPercentage,#postgradPercentage, #seniorSecPercentage{
+    width: 33px;
+}
