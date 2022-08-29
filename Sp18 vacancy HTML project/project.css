@@ -27,9 +27,43 @@ legend {
 
 #submitresetdiv {
     margin-top: 4px;
+
+
 }
 
-#name_div,
+#see_current_vacancies {
+    margin-left: 10px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+.personal_info_input_cls {
+    /* margin: 2.5px; */
+    margin: 5px;
+
+
+}
+
+#fname,
+#mname,
+#lname {
+    margin-right: 15px;
+    text-align: center;
+
+}
+
+.personal_info_label_cls {
+    /* margin: 1px; */
+    margin: 3.5px;
+
+}
+
+#country_code {
+    cursor: no-drop;
+}
+
 #secondary_details_div,
 #senior_sec_details_div,
 #grad_details_div,
@@ -55,15 +89,37 @@ legend {
 #last_company_div,
 #expected_salary_div,
 #upload_section_div {
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 
 #submit_button {
-    background-color: rgb(160, 235, 160);
+    /* background-color: rgb(160, 235, 160);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer; */
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
 }
 
 #reset_button {
     background-color: rgb(232, 94, 94);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+#reset_button:hover {
+    /* transition-delay: 0ms; */
+
 }
 
 #footer_div {
@@ -74,15 +130,11 @@ legend {
     text-decoration: underline;
 }
 
-.file_upload>input {
+.file_upload input {
     display: none;
 }
 
-#first_name_div,
-#middle_name_div,
-#last_name_div {
-    width: 33%;
-}
+
 
 #middle_name_div {
     margin-top: 5px;
@@ -126,7 +178,8 @@ legend {
 #last_company_name_div,
 #designation_div,
 #annual_ctc_div {
-    width: 33%;
+    /* width: 25%; */
+    margin-right: 18px;
 }
 
 #upload_photograph_div,
@@ -138,15 +191,36 @@ legend {
     width: 10%;
 }
 
+#skills {
+    border-radius: 15px;
+}
+
 #self_intro_video_image {
     border-radius: 14px;
 }
-#submit_div, #reset_div{
+
+#submit_div,
+#reset_div {
     width: 8%;
 }
-#certificates_image{
+
+#certificates_image {
     border-radius: 15px;
 }
-#gradPercentage,#secPercentage,#postgradPercentage, #seniorSecPercentage{
+
+#gradPercentage,
+#secPercentage,
+#postgradPercentage,
+#seniorSecPercentage {
     width: 33px;
 }
+
+/* .file_upload label img title{
+    border-radius: 25px;
+    border: 5px solid red;
+} */
+.file_upload img {
+    cursor: pointer;
+}
+
+

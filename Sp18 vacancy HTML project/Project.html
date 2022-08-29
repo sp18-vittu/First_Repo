@@ -22,7 +22,7 @@
             <p><strong>Career Opportunities</strong> </p>
         </div>
         <div id="hiring_div">
-            <p>We are hiring <a href="vacancy.html" target="_blank"> See Current Vacancies</a></p>
+            <p>We are hiring <a href="vacancy.html" id="see_current_vacancies" target="_blank"> See Current Vacancies</a></p>
             <!--<p>   <a href="#work" >  Go to work section</a></p> -->
         </div>
         <div id="please_fill_div">
@@ -58,6 +58,67 @@
             <div id="personal_info_div">
                 <fieldset>
                     <legend><strong>Personal Information</strong> </legend>
+                    <div id="personal_info_div" style="display: flex;">
+                        <div id="personal_info_label_div">
+                            <div id="name_label_div" class="personal_info_label_cls">
+                                <label for="fname">Name <sup>*</sup></label>
+                            </div>
+                            <div id="gender_label_div" class="personal_info_label_cls">
+                                <label for="gender">Gender <sup>*</sup> </label>
+                            </div>
+                            <div id="dob_label_div" class="personal_info_label_cls">
+                                <label for="dob">Date of Birth <sup>*</sup> </label>
+                            </div>
+                            <div id="email_label_div" class="personal_info_label_cls">
+                                <label for="email">Email id <sup>*</sup> </label>
+                            </div>
+                            <div id="mobile_label_div" class="personal_info_label_cls">
+                                <label for="mobile">Mobile No <sup>*</sup> </label>
+                            </div>
+                        </div>
+                        <div id="personal_info_input_div">
+                            <div id="name_input_div" class="personal_info_input_cls">
+
+                                <input type="text" name="fname" id="fname" title="First Name as per AADHAAR" required
+                                    placeholder="First Name *" >
+                                <input type="text" name="mname" id="mname" title="Middle Name as per AADHAAR"
+                                    placeholder="Middle Name">
+                                <input type="text" name="fname" id="lname" title="Last Name as per AADHAAR" required
+                                    placeholder="Last Name *">
+
+                            </div>
+                            <div id="gender_input_div" class="personal_info_input_cls">
+                                <input type="radio" name="gender" id="male" required>
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" id="female" required>
+                                <label for="female">Female</label>
+                                <input type="radio" name="gender" id="other" required>
+                                <label for="other">Other</label>
+                            </div>
+                            <div id="dob_input_div" class="personal_info_input_cls">
+                                <input type="date" name="dob" id="dob" title="DOB as per AADHAAR" required>
+                            </div>
+                            <div id="email_input_div" class="personal_info_input_cls">
+                                <input type="email" name="email" id="email"
+                                    title="Please input your current active email id" required>
+                            </div>
+                            <div id="mobile_input_div" class="personal_info_input_cls">
+                                <input type="text" id="country_code" size="1" value="  +91" readonly >
+                                <input type="tel" name="mobile" id="mobile" required pattern="[0-9]{10}"
+                                    placeholder="  8888888888" maxlength="10" size="10"
+                                    title="Enter your 10-digit active mobile number" >
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </fieldset>
+            </div>
+
+            <!-- <div id="personal_info_div">
+                <fieldset>
+                    <legend><strong>Personal Information</strong> </legend>
                     <div id="name_div">
                         <div id="first_name_div" >
                             <label for="fname">First Name <sup>*</sup> </label>
@@ -72,6 +133,7 @@
                             <input type="text" name="fname" id="lname" title="Last Name as per AADHAAR" required >
                         </div>
                     </div>
+                    
                     <div id="gender_div">
                         <label for="gender">Gender <sup>*</sup> </label>
                         <input type="radio" name="gender" id="male" required>
@@ -98,7 +160,7 @@
                             title="Enter your 10-digit active mobile number">
                     </div>
                 </fieldset>
-            </div>
+            </div> -->
 
             <div id="education_div">
                 <fieldset>
@@ -112,7 +174,7 @@
                             <div id="secondary_board_div">
                                 <label for="secBoard">Board<sup>*</sup></label>
                                 <input type="text" name="secBoard" id="secBoard" title="Enter full name of the board"
-                                    placeholder="Full name of the board" required>
+                                    placeholder="Full name of the board" required  >
                             </div>
                             <div id="secondary_school_div">
                                 <label for="secSchoolName">School<sup>*</sup></label>
@@ -128,7 +190,7 @@
                             <div id="secondary_percentage_div">
                                 <label for="secPercentage">Percentage<sup>*</sup> </label>
                                 <input type="text" name="secPercentage" id="secPercentage" pattern="[0-9]{2}.[0-9]{2}"
-                                    maxlength="5" placeholder="00.00"  title="Enter your Xth percentage">
+                                    maxlength="5" placeholder="00.00" title="Enter your Xth percentage">
                                 <span> %</span>
                             </div>
                         </div>
@@ -192,7 +254,7 @@
                             <div id="grad_percentage_div">
                                 <label for="gradPercentage">Percentage <sup>*</sup></label>
                                 <input type="text" name="gradPercentage" id="gradPercentage" pattern="[0-9]{2}.[0-9]{2}"
-                                    maxlength="5" placeholder="00.00" 
+                                    maxlength="5" placeholder="00.00"
                                     title="Enter your Graduation percentage, Convert CGPA to equivalent % "
                                     required><span> % </span>
                             </div>
@@ -205,7 +267,8 @@
                         </div>
                         <div id="post_grad_details_div">
                             <div id="post_grad_university_div">
-                                <label for="postuniv" id="postuniv">University <sup class="invisible_star">*</sup></label>
+                                <label for="postuniv" id="postuniv">University <sup
+                                        class="invisible_star">*</sup></label>
                                 <input type="text" name="postuniv" id="postuniv"
                                     title="Enter full name of the University" placeholder="Full name of the University">
                             </div>
@@ -220,15 +283,17 @@
                                     title="Full name of the course" placeholder="Full name of the course">
                             </div>
                             <div id="post_grad_year_of_passing_div">
-                                <label for="postgradPassingYear">Year of Passing <sup class="invisible_star">*</sup></label>
+                                <label for="postgradPassingYear">Year of Passing <sup
+                                        class="invisible_star">*</sup></label>
                                 <input type="month" name="postgradPassingYear" id="postgradPassingYear"
                                     title="Month and Year of Passing">
                             </div>
                             <div id="post_grad_percentage_div">
                                 <label for="postgradPercentage"> Percentage <sup class="invisible_star">*</sup></label>
                                 <input type="text" name="postgradPercentage" id="postgradPercentage"
-                                    pattern="[0-9]{3}.[0-9]{2}" maxlength="5" placeholder="00.00" 
-                                    title="Enter your Post Graduation percentage, Convert CGPA to equivalent % "><span> % </span>
+                                    pattern="[0-9]{3}.[0-9]{2}" maxlength="5" placeholder="00.00"
+                                    title="Enter your Post Graduation percentage, Convert CGPA to equivalent % "><span>
+                                    % </span>
 
                             </div>
                         </div>
@@ -264,7 +329,7 @@
 
                         </div>
                         <div id="annual_ctc_div">
-                            <label for=" sal">Annual CTC </label>
+                            <label for="sal">Annual CTC </label>
                             <input type="number" name="sal" id="sal" min="0" max="50" title="Annual CTC in lakhs">
                             <small>Lakhs</small>
                         </div>
@@ -272,8 +337,8 @@
                     <div id="expected_salary_div">
                         <label for="expsal">Expected Salary </label>
                         <input type="range" name="expsal" id="expsal" title="Expected annual salary in lakhs" min="0"
-                            max="50" step="1" value="0" >
-                            <!-- oninput="this.nextElementSibling.value = this.value"<output>0</output>
+                            max="50" step="1" value="0">
+                        <!-- oninput="this.nextElementSibling.value = this.value"<output>0</output>
                             <span>Lakhs</span> -->
                     </div>
                 </fieldset>
@@ -298,13 +363,15 @@
                         </div> -->
                         <div id="upload_photograph_div" class="file_upload">
                             <label for="upload_photo">
-                              <img src="profile.jpg" width="75" height="75" title="Upload your recent photograph (.jpg/.jpeg/.png )">
+                                <img src="profile.jpg" width="75" height="75"
+                                    title="Upload your recent photograph (.jpg/.jpeg/.png )">
                             </label>
-                            <input type="file" id="upload_photo" name="upload_photo"  accept="image/*" required>
+                            <input type="file" id="upload_photo" name="upload_photo" accept="image/*" required>
                         </div>
                         <div id="upload_resume_div" class="file_upload">
                             <label for="upload_resume">
-                                <img src="resume.jpg" id="resume_image" width="75" height="75" title="Upload your recent resume (.doc)">
+                                <img src="resume.jpg" id="resume_image" width="75" height="75"
+                                    title="Upload your recent resume (.doc)">
                             </label>
                             <input type="file" name="upload_resume" id="upload_resume" required
                                 accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document ">
@@ -312,7 +379,8 @@
                         </div>
                         <div id="upload_certificates_div" class="file_upload">
                             <label for="upload_certificates">
-                                <img src="certificates.jpg" id="certificates_image" width="75" height="75" title="Upload all educational and experience certificates (.pdf)">
+                                <img src="certificates.jpg" id="certificates_image" width="75" height="75"
+                                    title="Upload all educational and experience certificates (.pdf)">
                             </label>
                             <input type="file" name="upload_certificates" id="upload_certificates" multiple required
                                 accept=".pdf">
@@ -320,24 +388,24 @@
                         </div>
                         <div id="upload_self_intro_video_div" class="file_upload">
                             <label for="upload_video">
-                                <img src="self_intro_video.jpg" id="self_intro_video_image" width="75" height="75"  title="Upload your self introduction video (.mp4)">
+                                <img src="self_intro_video.jpg" id="self_intro_video_image" width="75" height="75"
+                                    title="Upload your self introduction video (.mp4)">
                             </label>
-                            <input type="file" name="upload_video" id="upload_video" required
-                                accept="video/* ">
+                            <input type="file" name="upload_video" id="upload_video" required accept="video/* ">
 
                         </div>
                         <div id="upload_explanation_audio_div" class="file_upload">
                             <label for="upload_audio">
-                                <img src="explanation_audio.jpg" id="explanation_audio_image" width="75" height="75"  title="Upload an audio explaining any topic of your choice (.mp3)">
+                                <img src="explanation_audio.jpg" id="explanation_audio_image" width="75" height="75"
+                                    title="Upload an audio explaining any topic of your choice (.mp3)">
                             </label>
-                            <input type="file" name="upload_audio" id="upload_audio" required
-                                accept="audio/* ">
+                            <input type="file" name="upload_audio" id="upload_audio" required accept="audio/* ">
 
                         </div>
                     </div>
                     <div id="skills_div">
                         <textarea name="skills" id="skills" cols="45" rows="5"
-                            placeholder="Tell us about yourself (including your sills)"></textarea>
+                            placeholder=" Tell us about yourself (including your sills)"></textarea>
                     </div>
                 </fieldset>
             </div>
@@ -347,7 +415,7 @@
                     <input type="submit" value="Submit Now" id="submit_button">
                 </div>
                 <div id="reset_div">
-                    <input type="reset" id="reset_button" value="Reset">
+                    <input type="reset" id="reset_button" value="Reset" title="Clear the form" >
                 </div>
             </div>
 
