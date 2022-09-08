@@ -19,23 +19,57 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
-        a{
+
+        a {
             text-decoration: none;
             color: white;
             font-size: 15px;
         }
-        button{
+        button {
             background-color: green;
             border-radius: 10px;
-            margin: 5px 0px 0px 77px;
-            
+            margin: 8px 0px 0px 120px;
+        }
+        #vacancy_table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            /* width: 100%; */
+        }
+
+        #vacancy_table td,
+        #vacancy_table th {
+            /* border: 1px solid #ddd; */
+            border: 1px solid red;
+            padding: 8px;
+        }
+
+        #vacancy_table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .department-names {
+            background-color: rgb(39, 72, 77) !important;
+            text-align: left !important;
+        }
+
+        #vacancy_table tr:hover {
+            /* background-color: #ddd; */
+            background-color: rgb(68, 64, 64);
+        }
+
+        #vacancy_table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #04AA6D;
+            color: white;
         }
     </style>
 </head>
 
 <body>
 
-    <table>
+    <table id="vacancy_table">
         <caption><strong> Vacancies</strong></caption>
         <thead>
             <tr>
@@ -43,46 +77,49 @@
                 <th>Role</th>
             </tr>
         </thead>
+
+
         <tbody>
             <tr>
-                <th rowspan="4">Engineering</th>
+                <th rowspan="4" class="department-names">Engineering</th>
                 <td>FrontEnd Engineer</td>
             </tr>
             <tr>
-                
+
                 <td>BackEnd Engineer</td>
             </tr>
             <tr>
-                
+
                 <td>UI/UX Designer</td>
             </tr>
             <tr>
-        
+
                 <td>QA Engineer</td>
             </tr>
             <tr>
-                <th rowspan="2">Finance</th>
+                <th rowspan="2" class="department-names">Finance</th>
                 <td>Accounts Manager</td>
             </tr>
             <tr>
-                
+
                 <td>Auditor</td>
             </tr>
             <tr>
-                <th rowspan="2">Marketing</th>
+                <th rowspan="2" class="department-names">Marketing</th>
                 <td>Sales Manager</td>
             </tr>
             <tr>
-                
+
                 <td>Digital Marketing Associate</td>
             </tr>
 
         </tbody>
+
     </table>
     <button>
-        <a href="vacancy_sp18.pdf" download title="Download this vacancy table" >Download</a>
+        <a href="vacancy_sp18.pdf" download title="Download this vacancy table">Download</a>
     </button>
-    
+
 </body>
 
 </html>

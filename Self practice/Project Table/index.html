@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .container {
+            width: 100%;
+            display: flex;
+            height: 500px;
+
+            /* border: 2px solid red; */
+        }
+
+        table {
+            border: 2px solid black;
+            width: 500px;
+            height: 300px;
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+            /* empty-cells: show; */
+            table-layout: fixed;
+        }
+
+        /* table:empty{
+            display: visible;
+        } */
+
+        tr {
+            border: 2px solid black;
+        }
+
+        td {
+            border: 2px solid black;
+
+        }
+
+        caption {
+            font-size: 25px;
+        }
+
+        .original {
+            background-color: aqua;
+        }
+
+        .row {
+            background-color: rgb(129, 129, 235);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <table>
+            <caption>Table</caption>
+            <colgroup>
+                <col span="4">
+                <!-- <col span="1" style="visibility: visible; border: 3px solid red; "> -->
+
+            </colgroup>
+            <tr>
+                <td rowspan="2" colspan="2">A</td>
+                <td rowspan="4">B</td>
+                <td colspan="2">C</td>
+                <td>D</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">F</td>
+                <td>G</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">E</td>
+                <td>H</td>
+                <td rowspan="2" colspan="2">I</td>
+            </tr>
+
+            <tr style="width: fit-content;">
+                <td>J</td>
+                <td>K</td>
+                <td>M</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">N</td>
+                <td>O</td>
+                <td colspan="2">P</td>
+                <td>Q</td>
+                <!-- <td>R</td> -->
+
+            </tr>
+
+            <!-- <tr>
+                <td colspan="2">N</td>
+                <td>O</td>
+                <td colspan="2">P</td>
+                <td>Q</td>
+                <td>R</td> 
+
+            </tr> -->
+        </table>
+    </div>
+    <!-- <div class="container" style="margin-top: 10px ;">
+        <table>
+            <tr class="row">
+                <td class="original" rowspan="2" colspan="2">A</td>
+                <td class="original" rowspan="4">B</td>
+                <td class="original" colspan="2">C</td>
+                <td class="original">D</td>
+
+
+            </tr>
+            <tr class="row">
+                <td class="original" colspan="2">F</td>
+                <td class="original">G</td>
+
+
+
+            </tr>
+            <tr class="row">
+                <td class="original" colspan="2">E</td>
+                <td class="original">H</td>
+                <td class="original" colspan="2" rowspan="2">I</td>
+
+
+
+            </tr>
+            <tr class="row">
+                <td class="original">J</td>
+                <td class="original">K</td>
+                <td class="original">M</td>
+
+
+            </tr>
+            <tr class="row">
+                <td class="original" colspan="2">N</td>
+                <td class="original" colspan="">O</td>
+                <td class="original" colspan="1">P</td>
+                <td class="original" colspan="">Q</td>
+                <td class="original" colspan="">R</td>
+
+            </tr>
+            <tr class="row">
+                <td class="original" colspan="2">S</td>
+                <td class="original" colspan="">T</td>
+                <td class="original" colspan="2">U</td>
+                <td class="original" colspan="">V</td>
+
+
+            </tr>
+        </table>
+
+    </div> -->
+
+</body>
+
+</html>

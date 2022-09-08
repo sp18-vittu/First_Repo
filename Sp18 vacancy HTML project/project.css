@@ -1,3 +1,42 @@
+    *{
+        box-sizing: border-box;
+    }
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        
+      }
+    .tooltip  .tooltiptext {
+        position: absolute;
+        visibility: hidden;
+        /* width: 120px; */
+        background-color: rgb(35, 30, 42);
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 5px;
+        z-index: 1;
+        bottom: 105%;
+        left: 45%;
+        margin-left: -60px;
+      }
+      
+      .tooltip  .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: rgb(35, 30, 42) transparent transparent transparent;
+      }
+      
+      .tooltip:hover  .tooltiptext {
+        visibility: visible;
+    }
+
 a:link {
     text-decoration: none;
 }
@@ -19,6 +58,7 @@ body {
 fieldset {
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 
 legend {
@@ -51,9 +91,12 @@ form {
 #lname {
     margin-right: 15px;
     text-align: center;
-
+    /* justify-content: space-between; */
+    
 }
-
+#personal_info_label_div{
+    min-width: 115px;
+}
 .personal_info_label_cls {
     /* margin: 1px; */
     margin: 3.5px;
@@ -64,6 +107,9 @@ form {
     cursor: no-drop;
 }
 
+
+#personal_info_main_div,
+#name_input_div,
 #secondary_details_div,
 #senior_sec_details_div,
 #grad_details_div,
@@ -83,7 +129,9 @@ form {
     margin-top: 10px;
 }
 
-
+#dob_input_div, #email_input_div{
+    margin-left: 5px;
+}
 #dob_div,
 #email_div,
 #last_company_div,
@@ -193,6 +241,8 @@ form {
 
 #skills {
     border-radius: 15px;
+    resize: none;
+    padding: 20px;
 }
 
 #self_intro_video_image {
@@ -212,7 +262,7 @@ form {
 #secPercentage,
 #postgradPercentage,
 #seniorSecPercentage {
-    width: 33px;
+    width: 40px;
 }
 
 /* .file_upload label img title{

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-layout-one .card {
+
+            width: 100%;
+            
+        }
+
+        .grid-layout-one .grid-parent {
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 1em;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <section class="grid-layout-one">
+        <h1>Using CSS Grid</h1>
+        <div class="grid-parent">
+            <div class="card">
+                <img src="//unsplash.it/300/200" alt="a placeholder">
+                <p>Oh, this little droid! I think he's searching for his former master...</p>
+            </div>
+            <div class="card">
+                <img src="//unsplash.it/300/200" alt="a placeholder">
+                <p>Oh, this little droid! I think he's searching for his former master...</p>
+            </div>
+            <div class="card">
+                <img src="//unsplash.it/300/200" alt="a placeholder">
+                <p>Oh, this little droid! I think he's searching for his former master...</p>
+            </div>
+            <div class="card">
+                <img src="//unsplash.it/300/200" alt="a placeholder">
+                <p>Oh, this little droid! I think he's searching for his former master...</p>
+            </div>
+            <div class="card">
+                <img src="//unsplash.it/300/200" alt="a placeholder">
+                <p>Oh, this little droid! I think he's searching for his former master...</p>
+            </div>
+            <div class="card">
+                <img src="//unsplash.it/300/200" alt="a placeholder">
+                <p>Oh, this little droid! I think he's searching for his former master...</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
