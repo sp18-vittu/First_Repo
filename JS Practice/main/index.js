@@ -198,7 +198,7 @@
 }
 
 
-// {   // *******   cool Object methods   *******
+ {   // *******   cool Object methods   *******
 
 //     let testObj = {
 //         fname: "Vivek",
@@ -279,9 +279,9 @@
 
 //     //12 Returns true if object is frozen
 //     //Object.isFrozen(object);
-// }
+ }
 
-// {
+ {
 //     let originalArray= [7, 5, 2, 3, 4, 10, 11];
 //     let changedArray = [7, 5, 2, 3, 4];
 
@@ -354,30 +354,37 @@
 
 
 
+}
+
+// {   // **********  min max of array  *********
+    
+
+//     function logic(a) {
+//         for (i = 0; i < a.length - 1; (a[i] > a[i + 1])
+//             ? ((a[i] = a[i] ^ a[i + 1]) && (a[i + 1] = a[i] ^ a[i + 1]) && (a[i] = a[i] ^ a[i + 1]) && (i = 0))
+//             : i++) { 
+//             }
+//         return a;
+//     } 
+//     let originalArray=[];
+//     let size=Number(prompt("Enter size of Array "));
+//     for(let i=0;i<size;i++){
+//         originalArray[i]=Number(prompt(`Enter element ${i+1} : `));
+//     }
+
+
+//     let sortedArray= logic(originalArray);
+//     let minSum=sortedArray[0]+sortedArray[1]+sortedArray[2]+sortedArray[3];
+//     let maxSum=sortedArray[size-4]+sortedArray[size-3]+sortedArray[size-2]+sortedArray[size-1];
+//     window.alert(`4 elements which gives the minimum sum are ${sortedArray[0]}, ${sortedArray[1]}, ${sortedArray[2]}, ${sortedArray[3]} and the minimum sum is ${minSum}`);
+//     alert(`4 elements which gives the maximum sum are ${sortedArray[size-1]}, ${sortedArray[size-2]}, ${sortedArray[size-3]} and  ${sortedArray[size-4]} and the maximum sum is ${maxSum}`);
+    
+
+
+
 // }
 
-{
-    
-   let size=5;
-    function logic(a) {
-        for (i = 0; i < a.length - 1; (a[i] > a[i + 1])
-            ? ((a[i] = a[i] ^ a[i + 1]) && (a[i + 1] = a[i] ^ a[i + 1]) && (a[i] = a[i] ^ a[i + 1]) && (i = 0))
-            : i++) { 
-            }
-        return a;
-    } 
-    let originalArray=[];
-    // let size=Number(prompt("Enter size of Array "));
-    for(let i=0;i<size;i++){
-        originalArray[i]=Number(prompt(`Enter element ${i+1} : `));
-    }
-    let sortedArray= logic(originalArray);
-    let minSum=sortedArray[0]+sortedArray[1]+sortedArray[2]+sortedArray[3];
-    let maxSum=sortedArray[size-4]+sortedArray[size-3]+sortedArray[size-2]+sortedArray[size-1];
-    window.alert(`4 elements which gives the minimum sum are ${sortedArray[0]}, ${sortedArray[1]}, ${sortedArray[2]}, ${sortedArray[3]} and the minimum sum is ${minSum}`);
-    alert(`4 elements which gives the maximum sum are ${sortedArray[size-1]}, ${sortedArray[size-2]}, ${sortedArray[size-3]} and  ${sortedArray[size-4]} and the maximum sum is ${maxSum}`);
-    
-}
+
 
 
 
