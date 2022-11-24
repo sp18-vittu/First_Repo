@@ -426,7 +426,7 @@
 // }
 
 
-{// pending/then/catch/async/await
+{// promise 
     let p= new Promise((resolve,reject)=>{
         resolve(2);
         // reject(new Error("I am an error"));
@@ -452,17 +452,5 @@
     })
 
 }
-
-
-{// 
-let changeCommitMsg="changed";
-let a=2;
-let b=3;
-// let c=4;
-
-}
-
-
-
 
 
