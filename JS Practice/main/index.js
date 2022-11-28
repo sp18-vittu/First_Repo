@@ -426,37 +426,35 @@
 // }
 
 
-{// promise 
-    // let p= new Promise((resolve,reject)=>{
-    //     resolve(2);
-    //     // reject(new Error("I am an error"));
-    // });
-    // p.then((value)=>{
-    //     console.log(value);
-    //     console.log(p);
-    // })
-    // .catch((error)=>{
-    //     console.log(error.name);
-    //     // console.log(error.message);
-    //     console.log(p);
-    // });
-    // async function test(){
-    //     setTimeout(() => {
-    //         console.log("I am in async function");
-    //     }, 2000);
-    //     return 10;
-    // }
-    // let output=test();
-    // output.then((value)=>{
-    //     console.log(`The result from asyn func is ${value}`);
-    // })
+{// promise
+//     let p= new Promise((resolve,reject)=>{
+//         resolve(2);
+//         // reject(new Error("I am an error"));
+//     });
+//     p.then((value)=>{
+//         console.log(value);
+//         console.log(p);
+//     })
+//     .catch((error)=>{
+//         console.log(error.name);
+//         // console.log(error.message);
+//         console.log(p);
+//     });
+//     async function test(){
+//         setTimeout(() => {
+//             console.log("I am in async function");
+//         }, 2000);
+//         return 10;
+//     }
+//     let output=test();
+//     output.then((value)=>{
+//         console.log(`The result from asyn func is ${value}`);
+//     })
 
 }
 
-{
-    let arr=[1,2,3];
-    [a,b,c]=arr;
-    console.log(a);
-    console.log(b);
-    console.log(c);
-}
+
+
+
+
+
