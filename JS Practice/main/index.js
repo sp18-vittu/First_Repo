@@ -356,7 +356,7 @@
 
 }
 
-// {   // **********  min max of array  *********
+{   // **********  min max of array  *********
 
 
 //     function logic(a) {
@@ -382,10 +382,10 @@
 
 
 
-// }
+ }
 
 
-// {// *********  call back *************
+{// *********  call back *************
 
 
 //     function loadScript(src, callback) {
@@ -423,35 +423,89 @@
 
 //     loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js", goodmorning);
 
-// }
+}
 
 
 {// promise
-//     let p= new Promise((resolve,reject)=>{
-//         resolve(2);
-//         // reject(new Error("I am an error"));
-//     });
-//     p.then((value)=>{
-//         console.log(value);
-//         console.log(p);
-//     })
-//     .catch((error)=>{
-//         console.log(error.name);
-//         // console.log(error.message);
-//         console.log(p);
-//     });
-//     async function test(){
-//         setTimeout(() => {
-//             console.log("I am in async function");
-//         }, 2000);
-//         return 10;
-//     }
-//     let output=test();
-//     output.then((value)=>{
-//         console.log(`The result from asyn func is ${value}`);
-//     })
+    //     let p= new Promise((resolve,reject)=>{
+    //         resolve(2);
+    //         // reject(new Error("I am an error"));
+    //     });
+    //     p.then((value)=>{
+    //         console.log(value);
+    //         console.log(p);
+    //     })
+    //     .catch((error)=>{
+    //         console.log(error.name);
+    //         // console.log(error.message);
+    //         console.log(p);
+    //     });
+    //     async function test(){
+    //         setTimeout(() => {
+    //             console.log("I am in async function");
+    //         }, 2000);
+    //         return 10;
+    //     }
+    //     let output=test();
+    //     output.then((value)=>{
+    //         console.log(`The result from asyn func is ${value}`);
+    //     })
 
 }
+
+{     // debouncing 
+// let counter = 0;
+// // const getData=(lname)=>{                    //arrow functions ignore the this variable, so if we want this func to point to some other this, we will write this as normal function like done before
+// //     // calls an API and gets Data
+// //      console.log("Fetching data...",counter++,this.fname,lname);
+// // }
+// function getData(text = "Singh is a frontEnd Developer") {           // to use thisVariable , we wrote this func without use of arrow func syntax
+
+//     console.log("Fetching data...", counter++, this.fname ? this.fname : "Vittu", text);
+
+// }
+// const debounce = function (fn, d, text) { 
+//     let timer;
+//     return function () {
+//         let obj = { fname: "Vittu" };
+//         // let context=this;
+//         clearTimeout(timer);
+//              timer = setTimeout(() => {
+//             fn.call(obj, text);
+//         }, d);
+//     };
+// };
+// const betterFunction = debounce(getData, 300, "Singh is a frontEnd Developer");
+
+ }
+
+
+{     // throttling
+let counter = 0; 
+function expensive(text="running Expensive Function") { 
+    console.log("Fetching data...", counter++, this.sampleText ? this.sampleText : "We are",text);
+
+}
+const throttle = function (func, limit,text) { 
+    let flag= true;
+    return function () {
+        // let context=this;
+        let context = { sampleText: "We are" };
+        if(flag===false) return
+        if(flag){
+            func.call(context,text);
+            flag=false;
+            setTimeout(() => {
+                flag=true;
+            }, limit);
+        }
+    };
+};
+const betterExpensive = throttle(expensive, 1000, "running better version of Expensive Function");
+
+}
+
+
 
 
 
