@@ -359,69 +359,69 @@
 {   // **********  min max of array  *********
 
 
-//     function logic(a) {
-//         for (i = 0; i < a.length - 1; (a[i] > a[i + 1])
-//             ? ((a[i] = a[i] ^ a[i + 1]) && (a[i + 1] = a[i] ^ a[i + 1]) && (a[i] = a[i] ^ a[i + 1]) && (i = 0))
-//             : i++) { 
-//             }
-//         return a;
-//     } 
-//     let originalArray=[];
-//     let size=Number(prompt("Enter size of Array "));
-//     for(let i=0;i<size;i++){
-//         originalArray[i]=Number(prompt(`Enter element ${i+1} : `));
-//     }
+    //     function logic(a) {
+    //         for (i = 0; i < a.length - 1; (a[i] > a[i + 1])
+    //             ? ((a[i] = a[i] ^ a[i + 1]) && (a[i + 1] = a[i] ^ a[i + 1]) && (a[i] = a[i] ^ a[i + 1]) && (i = 0))
+    //             : i++) { 
+    //             }
+    //         return a;
+    //     } 
+    //     let originalArray=[];
+    //     let size=Number(prompt("Enter size of Array "));
+    //     for(let i=0;i<size;i++){
+    //         originalArray[i]=Number(prompt(`Enter element ${i+1} : `));
+    //     }
 
 
-//     let sortedArray= logic(originalArray);
-//     let minSum=sortedArray[0]+sortedArray[1]+sortedArray[2]+sortedArray[3];
-//     let maxSum=sortedArray[size-4]+sortedArray[size-3]+sortedArray[size-2]+sortedArray[size-1];
-//     window.alert(`4 elements which gives the minimum sum are ${sortedArray[0]}, ${sortedArray[1]}, ${sortedArray[2]}, ${sortedArray[3]} and the minimum sum is ${minSum}`);
-//     alert(`4 elements which gives the maximum sum are ${sortedArray[size-1]}, ${sortedArray[size-2]}, ${sortedArray[size-3]} and  ${sortedArray[size-4]} and the maximum sum is ${maxSum}`);
+    //     let sortedArray= logic(originalArray);
+    //     let minSum=sortedArray[0]+sortedArray[1]+sortedArray[2]+sortedArray[3];
+    //     let maxSum=sortedArray[size-4]+sortedArray[size-3]+sortedArray[size-2]+sortedArray[size-1];
+    //     window.alert(`4 elements which gives the minimum sum are ${sortedArray[0]}, ${sortedArray[1]}, ${sortedArray[2]}, ${sortedArray[3]} and the minimum sum is ${minSum}`);
+    //     alert(`4 elements which gives the maximum sum are ${sortedArray[size-1]}, ${sortedArray[size-2]}, ${sortedArray[size-3]} and  ${sortedArray[size-4]} and the maximum sum is ${maxSum}`);
 
 
 
 
- }
+}
 
 
 {// *********  call back *************
 
 
-//     function loadScript(src, callback) {
-//         var script = document.createElement("script");
-//         script.src = src;
-//         script.onload = function () {
-//             console.log("Loaded script with SRC: " + src);
-//             callback(null, src);
-//         };
-//         script.onerror = function () {
-//             console.log("Error loading script with SRC: " + src);
-//             callback(new Error("Src got some error"));
-//         };
-//         document.body.appendChild(script);
-//     }
+    //     function loadScript(src, callback) {
+    //         var script = document.createElement("script");
+    //         script.src = src;
+    //         script.onload = function () {
+    //             console.log("Loaded script with SRC: " + src);
+    //             callback(null, src);
+    //         };
+    //         script.onerror = function () {
+    //             console.log("Error loading script with SRC: " + src);
+    //             callback(new Error("Src got some error"));
+    //         };
+    //         document.body.appendChild(script);
+    //     }
 
-//     function hello(error, src) {
-//         if (error) {
-//             console.log(error);
-//             return;
-//         }
-//         alert('Hello World!' + src);
-//     }
+    //     function hello(error, src) {
+    //         if (error) {
+    //             console.log(error);
+    //             return;
+    //         }
+    //         alert('Hello World!' + src);
+    //     }
 
 
-//     function goodmorning(error, src) {
+    //     function goodmorning(error, src) {
 
-//         if (error) {
-//             console.log(error);
-//             sendEmergencyMessageToCeo();
-//             return;
-//         }
-//         alert('Good morning' + src);
-//     }
+    //         if (error) {
+    //             console.log(error);
+    //             sendEmergencyMessageToCeo();
+    //             return;
+    //         }
+    //         alert('Good morning' + src);
+    //     }
 
-//     loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js", goodmorning);
+    //     loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js", goodmorning);
 
 }
 
@@ -454,61 +454,121 @@
 }
 
 {     // debouncing 
-// let counter = 0;
-// // const getData=(lname)=>{                    //arrow functions ignore the this variable, so if we want this func to point to some other this, we will write this as normal function like done before
-// //     // calls an API and gets Data
-// //      console.log("Fetching data...",counter++,this.fname,lname);
-// // }
-// function getData(text = "Singh is a frontEnd Developer") {           // to use thisVariable , we wrote this func without use of arrow func syntax
+    // let counter = 0;
+    // // const getData=(lname)=>{                    //arrow functions ignore the this variable, so if we want this func to point to some other this, we will write this as normal function like done before
+    // //     // calls an API and gets Data
+    // //      console.log("Fetching data...",counter++,this.fname,lname);
+    // // }
+    // function getData(text = "Singh is a frontEnd Developer") {           // to use thisVariable , we wrote this func without use of arrow func syntax
 
-//     console.log("Fetching data...", counter++, this.fname ? this.fname : "Vittu", text);
+    //     console.log("Fetching data...", counter++, this.fname ? this.fname : "Vittu", text);
 
-// }
-// const debounce = function (fn, d, text) { 
-//     let timer;
-//     return function () {
-//         let obj = { fname: "Vittu" };
-//         // let context=this;
-//         clearTimeout(timer);
-//              timer = setTimeout(() => {
-//             fn.call(obj, text);
-//         }, d);
-//     };
-// };
-// const betterFunction = debounce(getData, 300, "Singh is a frontEnd Developer");
+    // }
+    // const debounce = function (fn, d, text) { 
+    //     let timer;
+    //     return function () {
+    //         let obj = { fname: "Vittu" };
+    //         // let context=this;
+    //         clearTimeout(timer);
+    //              timer = setTimeout(() => {
+    //             fn.call(obj, text);
+    //         }, d);
+    //     };
+    // };
+    // const betterFunction = debounce(getData, 300, "Singh is a frontEnd Developer");
 
- }
+}
 
 
 {     // throttling
-let counter = 0; 
-function expensive(text="running Expensive Function") { 
-    console.log("Fetching data...", counter++, this.sampleText ? this.sampleText : "We are",text);
+    // let counter = 0; 
+    // function expensive(text="running Expensive Function") { 
+    //     console.log("Fetching data...", counter++, this.sampleText ? this.sampleText : "We are",text);
+
+    // }
+    // const throttle = function (func, limit,text) { 
+    //     let flag= true;
+    //     return function () {
+    //         // let context=this;
+    //         let context = { sampleText: "We are" };
+    //         if(flag===false) return
+    //         if(flag){
+    //             func.call(context,text);
+    //             flag=false;
+    //             setTimeout(() => {
+    //                 flag=true;
+    //             }, limit);
+    //         }
+    //     };
+    // };
+    // const betterExpensive = throttle(expensive, 1000, "running throttled version of Expensive Function");
 
 }
-const throttle = function (func, limit,text) { 
-    let flag= true;
-    return function () {
-        // let context=this;
-        let context = { sampleText: "We are" };
-        if(flag===false) return
-        if(flag){
-            func.call(context,text);
-            flag=false;
-            setTimeout(() => {
-                flag=true;
-            }, limit);
-        }
-    };
-};
-const betterExpensive = throttle(expensive, 1000, "running better version of Expensive Function");
+
+
+{// function currying
+    // function currying using bind
+
+    //     let multiply=function(x,y){
+    //         console.log(x*y);
+    //     }
+
+    //     let multiplyByTwo=multiply.bind(this,2);  //  here 2 is set to x,    this is called function currying (presetting parameter of a function)
+    //     multiplyByTwo(5);        // 5 will go in y,   and will log 10 as answer
+
+
+
+    //     // another way of implementing function currying :  use closures
+
+    //     let add =function (x){
+    //         return function(y){    
+    //             console.log(x+y);   
+    //         }
+    //     }
+    //     let add5toNumber= add(5);
+    //     add5toNumber(10);
+    //     // alternatively add(5)(6);
+
+
+    // another example of currying using closures
+    // function sum(x) {
+    //     return function (y) {
+    //         // if(y){      
+    //         //     return sum(x+y);
+    //         // }else return x;
+    //     };
+    // }
+    // console.log(sum(1)(2)(3)(4)(5)(6)(7)(8)(9)(10)());
+
 
 }
 
 
+{    // event bubbling , capturing/trickling
+    // capturing/trickling : trickling down the events , going inside
+    // event bubbling : bubbling up , going up
+    // BY DEFAULT : First capturing down happens and then bubbling up happens
 
 
+    // document.querySelector("#grandparent").addEventListener('click',()=>{
+    //     console.log("GrandParent Clicked !");
+    // },true);    // third argument here is the value for useCapture
+    // document.querySelector("#parent").addEventListener('click',()=>{
+    //     console.log("Parent Clicked !");
+    // },false);
+    // document.querySelector("#child").addEventListener('click',()=>{
+    //     console.log("child Clicked !");
+    // },true);
+}
 
-
+{ // event delegation 
+    // : attaching single event to the parent instead of attaching separate events  to each child elements   
+    // document.querySelector("#category").addEventListener('click',(e)=>{
+    //     // console.log(e.target);  
+    //     if(e.target.tagName=='LI'){    // to redirect only li items
+    //         window.location.href="/"+e.target.id;
+    //     }
+    // })
+}
 
 
